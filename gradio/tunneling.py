@@ -86,6 +86,8 @@ class Tunnel:
             os.getenv("FRP_PSWD"),
             "--server_addr",
             os.getenv("FRP_ADDR"),
+            "--custom_domain",
+            os.getenv("FRP_ADDR"),
             "--disable_log_color",
         ]
         self.proc = subprocess.Popen(
